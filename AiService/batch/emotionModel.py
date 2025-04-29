@@ -9,8 +9,8 @@ from typing import List
 # modelDir = r"C:\Users\user\workspace\Sentry\AI-STARS\AiService\model\0424_model_epoch10_es2_lr2e-5_86"
 # tokenizerDir = r"C:\Users\user\workspace\Sentry\AI-STARS\AiService\model\0424_tokenizer_epoch10_es2_lr2e-5_86"
 baseDir = os.path.dirname(__file__)
-tokenizerDir = os.path.abspath(os.path.join(baseDir, "../model/0424_tokenizer_epoch10_es2_lr2e-5_86/0424_tokenizer_epoch10_es2_lr2e-5_86"))
-modelDir = os.path.abspath(os.path.join(baseDir, "../model/0424_model_epoch10_es2_lr2e-5_86/0424_model_epoch10_es2_lr2e-5_86"))
+tokenizerDir = os.path.abspath(os.path.join(baseDir, "/model/0424_tokenizer_epoch10_es2_lr2e-5_86/0424_tokenizer_epoch10_es2_lr2e-5_86"))
+modelDir = os.path.abspath(os.path.join(baseDir, "/model/0424_model_epoch10_es2_lr2e-5_86/0424_model_epoch10_es2_lr2e-5_86"))
 
 tokenizer = BertTokenizer.from_pretrained(tokenizerDir, local_files_only=True)
 #tokenizer = BertTokenizer(vocab_file=os.path.join(tokenizerDir, "vocab.txt"))
